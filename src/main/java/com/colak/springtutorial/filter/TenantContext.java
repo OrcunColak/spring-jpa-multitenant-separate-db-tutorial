@@ -4,6 +4,8 @@ import org.slf4j.MDC;
 
 import java.util.Objects;
 
+// Responsible for holding the current tenant identifier.
+// We use a ThreadLocal variable to store the tenant identifier for each request.
 public class TenantContext {
 
     private static final String DEFAULT_TENANT = "public";
